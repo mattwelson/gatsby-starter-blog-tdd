@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter now with 100% more MDX
+  Gatsby's blog starter now with 100% more MDX and TDD
 </h1>
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React, with support for an MDX blog.
@@ -34,7 +34,7 @@ this blog possible!
 
     ```sh
     cd my-blog-starter/
-    gatsby develop
+    npm start
     ```
 
 1.  **Open the source code and start editing!**
@@ -44,6 +44,22 @@ this blog possible!
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
     Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+1.  **Open Cypress and Jest**
+
+With the site running you can now use [Cypress](https://www.cypress.io/) and [Jest](https://jestjs.io/)
+
+For unit tests create a `__test__/*.js` file next to the components you want to test, or use the `*.spec.js` or `*.test.js` pattern.
+
+```sh
+npm test
+```
+
+For end to end tests using Cypress create a test file at `cypress/e2e/*.js`.
+
+```sh
+npm run cy:open
+```
 
 ## 💫 Deploy
 
