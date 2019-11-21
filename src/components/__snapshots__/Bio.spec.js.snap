@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Bio renders pure bio 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "marginBottom": "4.375rem",
+    }
+  }
+>
+  <img
+    alt="Test Author"
+    style={
+      Object {
+        "borderRadius": "100%",
+        "marginBottom": 0,
+        "marginRight": "0.875rem",
+        "minWidth": 50,
+      }
+    }
+  />
+  <p>
+    Written by 
+    <strong>
+      Test Author
+    </strong>
+     who lives and works in Minneapolis building silly things.
+     
+    <a
+      href="https://twitter.com/testtwitter.com"
+    >
+      You should follow him on Twitter
+    </a>
+  </p>
+</div>
+`;
+
 exports[`PureBio renders correctly 1`] = `
 <div
   style={

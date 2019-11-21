@@ -38,7 +38,11 @@ PureBio.propTypes = {
   social: PropTypes.shape({
     twitter: PropTypes.string.isRequired,
   }).isRequired,
-  avatar: PropTypes.shape(),
+  avatar: PropTypes.shape({
+    childImageSharp: PropTypes.shape({
+      fixed: PropTypes.shape(),
+    }),
+  }),
 }
 
 function Bio() {
